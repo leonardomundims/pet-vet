@@ -17,5 +17,23 @@ namespace at02_PetVet.Controllers
             return View();
         }
 
+        public IActionResult Servicos()
+        {
+            return View();
+        }
+
+        public IActionResult Agendar()
+        {
+            return View();
+        }
+
+
+        // implementar envio do formulario
+        // [HttpPost]
+        // public IActionResult Agendar()
+        // {
+        //     return View();
+        // }
+
     }
 }

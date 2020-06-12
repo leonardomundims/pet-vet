@@ -1,0 +1,101 @@
+/* marcar pagina */
+
+#a-servicos {
+    margin: 5px 0;
+    border-bottom: 3px solid var(--title-color);
+}
+
+#servicos .container-page {
+    margin: 48px auto;
+}
+
+#servicos h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: var(--contrast-color);
+}
+
+#servicos .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#servicos .card {
+    background-color: white;
+    padding: 15px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#servicos .card img {
+    width: 50%;
+    object-fit: contain;
+}
+
+#servicos .card .img-serv img {
+    display: block;
+    margin: 0 auto;
+}
+
+#servicos .card .img-double {
+    display: flex;
+}
+
+#servicos .card .img-double img {
+    transform: translateX(20%);
+    z-index: 99;
+}
+
+#servicos .card .img-double img+img {
+    transform: translateX(-20%);
+    z-index: 1;
+}
+
+#servicos .card .content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#servicos .card .content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#servicos .card .content p {
+    line-height: 24px;
+}
+
+#servicos .card .price {
+    margin: 12px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--contrast-color);
+}
+
+#servicos .card a {
+    width: 60%;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 400ms;
+    letter-spacing: 1px;
+}
+
+#servicos .card a:hover {
+    background-color: var(--secondary-color);
+}

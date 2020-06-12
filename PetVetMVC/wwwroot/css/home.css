@@ -1,0 +1,37 @@
+/* marcar pagina */
+
+#a-home {
+    margin: 5px 0;
+    border-bottom: 3px solid var(--title-color);
+}
+
+#home .container-page {
+    margin-top: 40px;
+    display: flex;
+}
+
+#home .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 24px;
+}
+
+#home .content h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+#home .content h1,
+#home .content h4 {
+    color: var(--contrast-color);
+}
+
+#home .content p {
+    color: var(--text-color);
+}
+
+#home .img-loja {
+    width: 70%;
+}

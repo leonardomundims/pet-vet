@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Agendamento";
+    ViewData["PageId"] = "agendar";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/agendar.css" />
+}
+
+<div class="container-page border">
+    
+
+    <form action="">
+        <h3>Pré agendamento</h3>
+        <div class="field-group">
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome">
+            </div>
+
+            <div class="field">
+                <label for="fone">Telefone</label>
+                <input type="text" name="fone" placeholder="xx 9...">
+            </div>
+        </div>
+
+        <div class="field-group">
+            <div class="field">
+                <label for="data">Data</label>
+                <input type="date" name="data">
+            </div>
+
+            <div class="field">
+                <label for="animal">Animal</label>
+                <select name="animal" id="">
+                    <option value="">Selecione o tipo do animal</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="" cols="30" rows="10" placeholder="No que podemos te ajudar..."></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</div>

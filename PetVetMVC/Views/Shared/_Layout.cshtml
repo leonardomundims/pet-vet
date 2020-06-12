@@ -4,23 +4,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PetVet</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- google fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="~/css/main.css" />
+    @RenderSection("Styles", required: false)
+    <link rel="stylesheet" href="~/css/responsive.css" />
 </head>
-<body>
-    <header>
+<body id="@ViewData["PageId"]">
+    <header class="container">
+        <a asp-action="Index" class="logo"><span></span> PetVet</a>
+        <nav>
+            <ul>
+                <li><a asp-action="Index" id="a-home">Home</a></li>
+                <li><a asp-action="Servicos" id="a-servicos">Serviços</a></li>
+                <li><a asp-action="Agendar" id="a-agendar">Agendamento</a></li>
+            </ul>
+        </nav>
      
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - PetVet 
+    <footer class="footer">
+        <div class="container ">
+            <div class="flex">
+                <div class="social-media">
+                    <a href="#"><img src="/images/social-media/whatsapp.svg" alt="whatsapp"></a>
+                    <a href="#"><img src="/images/social-media/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="/images/social-media/instagram.svg" alt="instagram"></a>
+                </div>
+                
+                &copy; 2020 - PetVet 
+            </div>
+
+            <div class="direitos">
+                Ícones feitos por <a href="http://www.freepik.com/" title="Freepik">Freepik</a> e <a href="https://www.flaticon.com/br/autores/smashicons" title="Smashicons">Smashicons</a> 
+                from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+            </div>
         </div>
     </footer>
+    <!-- feather icons -->
+    <script>
+      feather.replace()
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

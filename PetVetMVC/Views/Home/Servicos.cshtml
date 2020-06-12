@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Serviços";
+    ViewData["PageId"] = "servicos";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/servicos.css" />
+}
+
+<div class="container-page">
+    <h2>Nossos serviços</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="img-serv">
+                <img src="/images/services/vacina.svg" alt="vacina">
+            </div>
+            <div class="content">
+                <h3>Vacinas</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus laboriosam.</p>
+                <span class="price"><i data-feather="dollar-sign"></i>Aplicação grátis</span>
+                <a asp-action="Agendar">Agendar</a>
+            </div>
+        </div>
+        <div class="card">
+           <div class="img-double">
+               <img src="/images/services/f-doctor.svg" alt="medica">
+               <img src="/images/services/m-doctor.svg" alt="medico">
+           </div>
+           <div class="content">
+                <h3>Consultas <small>e</small> Cirurgias</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus laboriosam.</p>
+                <span class="price"><i data-feather="dollar-sign"></i>105,00</span>
+                <a asp-action="Agendar">Agendar</a>
+            </div>
+        </div>
+        <div class="card">
+           <div class="img-serv">
+               <img src="/images/services/raio-x.svg" alt="raio-x">
+            </div>
+            <div class="content">
+                <h3>Raio X</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus laboriosam.</p>
+                <span class="price"><i data-feather="dollar-sign"></i>85,00</span>
+                <a asp-action="Agendar">Agendar</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
