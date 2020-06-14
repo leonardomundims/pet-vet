@@ -29,6 +29,7 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
 }
 
 #servicos .card img {
@@ -47,7 +48,7 @@
 
 #servicos .card .img-double img {
     transform: translateX(20%);
-    z-index: 99;
+    z-index: 9;
 }
 
 #servicos .card .img-double img+img {

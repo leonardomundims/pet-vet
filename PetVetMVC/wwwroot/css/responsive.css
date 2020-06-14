@@ -31,6 +31,16 @@
         justify-content: center;
         margin: 0 24px;
     }
+    /* page serviços */
+    #servicos .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #servicos .cards .card {
+        max-width: 220px;
+        margin: 16px;
+    }
     /* page agendar */
     #agendar form {
         padding: 30px;
@@ -41,6 +51,9 @@
 /* smartphone */
 
 @media (max-width: 767px) {
+    body {
+        margin-bottom: 100px;
+    }
     .hide {
         display: none;
     }
@@ -51,8 +64,8 @@
         width: 40px;
         height: 40px;
     }
-    #responsive-menu {
-        transition: all 0.3s;
+    .responsive {
+        border-bottom: 2px solid var(--primary-color);
     }
     header .container {
         display: flex;
@@ -74,8 +87,9 @@
         left: 0;
         top: 100px;
         height: 50vh;
-        background-color: var(--background-color);
         width: 100%;
+        background-color: var(--background-color);
+        z-index: 99;
     }
     /* page home */
     #home .img-loja {
@@ -94,7 +108,21 @@
         margin: 0 24px;
     }
     /* page agendar */
+    #agendar main .container {
+        margin: 48px 0 0;
+        width: 100%;
+    }
     #agendar form {
-        padding: 30px;
+        width: 100%;
+        margin: 48px auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    #agendar .field-group {
+        flex-direction: column;
+    }
+    #agendar .field+.field {
+        margin-left: 10px;
     }
 }
