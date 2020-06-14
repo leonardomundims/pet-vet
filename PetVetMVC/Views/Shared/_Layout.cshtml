@@ -15,15 +15,20 @@
 </head>
 <body id="@ViewData["PageId"]">
     <header class="container">
-        <a asp-action="Index" class="logo"><span></span> PetVet</a>
+        <div class="responsive">
+            <span id="toggle-menu"><img src="/images/menu.svg" alt="Menu"></span>
+            <a asp-action="Index" class="logo"><span></span> PetVet</a>
+        </div>
         <nav>
-            <ul>
-                <li><a asp-action="Index" id="a-home">Home</a></li>
-                <li><a asp-action="Servicos" id="a-servicos">Serviços</a></li>
-                <li><a asp-action="Agendar" id="a-agendar">Agendamento</a></li>
-            </ul>
+            <div id="responsive-menu" class="hide">
+                <ul class="menu">
+                    <li><a asp-action="Index" id="a-home">Home</a></li>
+                    <li><a asp-action="Servicos" id="a-servicos">Serviços</a></li>
+                    <li><a asp-action="Agendar" id="a-agendar">Agendamento</a></li>
+                </ul>
+            </div>
         </nav>
-     
+
     </header>
     <div class="container">
         <main role="main">
@@ -43,7 +48,7 @@
                 &copy; 2020 - PetVet 
             </div>
 
-            <div class="direitos">
+            <div class="direitos hide">
                 Ícones feitos por <a href="http://www.freepik.com/" title="Freepik">Freepik</a> e <a href="https://www.flaticon.com/br/autores/smashicons" title="Smashicons">Smashicons</a> 
                 from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
             </div>
@@ -52,6 +57,13 @@
     <!-- feather icons -->
     <script>
       feather.replace()
+
+      const btnMenu = document.getElementById("toggle-menu")
+      const menu = document.getElementById("responsive-menu")
+
+      btnMenu.addEventListener("click", () => {
+          menu.classList.toggle("hide")
+      })
     </script>
     @RenderSection("Scripts", required: false)
 </body>

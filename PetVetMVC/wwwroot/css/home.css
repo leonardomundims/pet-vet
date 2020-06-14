@@ -32,6 +32,6 @@
     color: var(--text-color);
 }
 
-#home .img-loja {
+#home .img-loja img {
     width: 70%;
 }

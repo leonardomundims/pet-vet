@@ -114,23 +114,30 @@ header {
     justify-content: space-between;
 }
 
-header nav ul {
+header .menu {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-header nav ul li {
+header .menu li {
     margin: 0 15px;
 }
 
-header nav ul li a {
+header .menu li a {
     transition: all 0.2s;
 }
 
-header nav ul li a:hover {
+header .menu li a:hover {
     margin: 5px 0;
     border-bottom: 3px solid var(--title-color);
+}
+
+
+/* menu responsivo */
+
+#toggle-menu {
+    display: none;
 }
 
 
